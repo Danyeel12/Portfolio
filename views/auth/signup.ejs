@@ -1,0 +1,42 @@
+<!--
+  MAKE FORM TO SIGN UP FOR SITE
+  ALL FIELDS TO CREATE A USER OBJECT IN DATABASE
+  AS WELL AS A CONFIRM PASSWORD FIELD
+  MAKE SURE FORM ACION USES /USERS/SIGNUP
+
+  for name tags in inputs =  make same as the name of the attributes of object 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/signupstyle.css">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <title>sign up</title>
+</head>
+<body>  
+  <%- include ('../partials/header')%>  
+  <h1>sign up form</h1>
+  <form class="signupForm" action="/users/signup" method="post" validate> 
+    <label>first name</label><br>
+    <input type="text" name="firstName" value="<%= user.firstName %>"/><br>
+    <label>last name</label><br>
+    <input type="text" name="lastName" value="<%= user.lastName %>"/><br>
+    <label>email</label><br>
+    <input type="text" name="email" value="<%= user.email %>"/><br>
+    <label>user name</label><br>
+    <input type="text" name="userName" value="<%= user.userName %>"/><br>
+    <label>password</label><br>
+    <input type="password" name="password" value="<%= user.password %>"/><br>
+    <label>confirm password</label><br>
+    <input type="password" name="confirmedpassword"/><br>
+    <button type="submit">sign up</button>
+  </form>  
+  <%- include ('../partials/footer')%>  
+</body>
+</html>

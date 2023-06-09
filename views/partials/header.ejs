@@ -1,0 +1,30 @@
+  <!-- header.ejs | zack bowker | 301199878 | june 3-->
+  <header id="header" class="head">
+    <img src="/images/profile_image.png" alt="zik logo" id="headerImg">
+    <nav id="navBar" class="navBar">
+      <ul>
+        <li>
+          <a href="/">HOME</a>
+        </li>
+        <li>
+          <a href="/about">ABOUT</a>
+        </li>
+        <li>
+          <a href="/projects">PROJECTS</a>
+        </li>
+        <li>
+          <a href="/services">SERVICES</a>
+        </li>
+        <li>
+          <a href="/contact">CONTACT</a>
+        </li>
+        <li>
+          <% if (typeof userName == 'string' && userName) { %>
+            <a href="/users/signout" onclick="return confirm('are you sure?')">logout</a>
+          <% } else { %>
+            <a href="/users/signin">LOGIN</a>
+          <% } %>                            
+        </li>
+      </ul>
+    </nav>
+  </header>

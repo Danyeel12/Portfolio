@@ -1,0 +1,61 @@
+<!--
+
+NAME: DANIEL MIRANDA
+STUDENT ID: 301249991
+DATE: JUNE 6, 2023
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/contactstyle.css">
+  <link rel="shortcut icon" href="/images/profile_image.png" type="image/x-icon">
+  <title>contact</title>
+
+</head>
+<body class="homeBody">
+  <%- include ('partials/header')%>  
+  <div id="mainContainer">
+    <h2>PLEASE COMPLETE THE FORM BELOW TO INQUIRE ABOUT MY SERVICES OR CREATE AN ACCOUNT</h2><br>
+    &nbsp;<i class="material-icons"> Contact Information - Email: <a href="mailto:your-email@example.com">Miranda.D1103@gmail.com</a></i><br>&nbsp;
+    <i class="fa fa-phone">Number: <a href="tel:+1234567890"> +1234567890</a></i> 
+    
+  </div>     
+    
+  <form action="" id="form">
+    <h2>Inquiry Form</h2>    
+    <label for="name">Name</label>
+    <input type="text" placeholder="Name:" id="name" required>    
+    <label for="email">Email</label>
+    <input type="email" placeholder="Email" id="email" required>
+    <label for="phone number">phone number</label>
+    <input type="tel" placeholder="1234567890" maxlength="10" id="number" required><br>
+    <label for="inquiry" id="selectLabel">Inquiry Selection</label><br>
+    <select id="inquirySelection">
+      <option disabled selected value="none">SELECT</option>
+      <option value="web">Web Design</option>
+      <option value="programming">Programming Code</option>
+      <option value="database">Database</option>
+      <option value="other">Other</option>
+    </select><br>
+    <label for="notes">Type your main inquiry</label><br>
+    <textarea id="additional" cols="100" rows="10"></textarea><br>
+    <button type="submit" onclick="validation()" href="../homepage/index.html">Submit</button> 
+  </form>
+  
+  <script src="/javascripts/contact.js"></script>
+  <%- include ('partials/footer')%>
+</body>
+</html>
+
+<!--<div id="info">
+    <i class="material-icons">Email: Miranda.D1103@gmail.com</i> <i class="fa fa-phone">+1 647-871-4503</i>
+
+  </div>-->
+
+
+
