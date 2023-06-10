@@ -1,4 +1,7 @@
-//services.js | zack bowker | 301199878 | june 3
+
+//NAME: DANIEL MIRANDA
+//STUDENT ID: 301249991
+//DATE: JUNE 6, 2023
 
 $(document).ready(function(){
   $("#web h2").click(function(){

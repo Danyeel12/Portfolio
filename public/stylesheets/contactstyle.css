@@ -10,8 +10,7 @@ body {
   margin: auto;      
 }
 
-h1 {    /*need to figure out why this isnt centering too - probably something to do with the original stylesheet overriding the second one*/
-  padding-bottom: 20px;
+h1 {    
   text-align: center;
 }
 
